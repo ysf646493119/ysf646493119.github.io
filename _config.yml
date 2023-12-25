@@ -1,0 +1,61 @@
+# site settings
+
+title: Shifan Yu
+description: A site to showcase the work of Shifan Yu
+taglong: A site to showcase the work of Shifan Yu
+tagshort: Shifan Yu site
+url: https://www.yushifan.com
+baseurl: ""
+permalink: pretty
+repo: https://github.com/ysf64693119/ysf646493119.github.io
+
+# author settings
+
+author:
+  name: 俞诗凡
+  email: username@domain.com
+photo: /assets/jpg/photo.jpg
+
+# social media links
+
+social:
+  facebook: username
+  github: ysf646493119
+  instagram: username
+  linkedin: shifan-yu-a0801428a
+  stackoverflow: 0000000/username
+  twitter: username
+
+# build settings
+
+exclude:
+  - LICENSE
+  - README.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate-v2
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+whitelist:
+  - jekyll-sitemap
+
+sass:
+  sass_dir: _sass
+  style: compressed
+  sourcemap: never
+
+feed:
+  path: atom.xml
+
+autopages:
+  enabled: false
+
+pagination:
+  enabled: true
+  per_page: 1
+  sort_reverse: true
+  permalink: /:num/
+  title: ":title &middot; Page :num"
